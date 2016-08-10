@@ -1,0 +1,42 @@
+body {
+	width: 90vw;
+	height: 100vh;
+	line-height: 3rem;
+	background-color: #f9f8e8;
+	font-family: 'Playfair Display', serif;
+	color: #2a4449;
+	text-align: center;
+	letter-spacing: 0.1rem;
+}
+
+header {
+	padding-top: 3rem;
+	height: 30vh;
+	letter-spacing: 0.2rem;
+	
+}
+
+h1 {
+	margin: 2rem 0;
+	font-size: 3rem;
+	letter-spacing: 0.3rem;
+}
+
+.panel {
+	height: 35vh;
+	width: 100vw;
+	background-color: #2a4449;
+}
+
+a {
+	line-height: 4rem;
+	margin: 2rem;
+}
+a:link {
+	text-decoration: none;
+	color: #2a4449;
+}
+
+a:visited {
+	color: #2a4449;
+}
