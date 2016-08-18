@@ -43,7 +43,6 @@ section {
 	letter-spacing: 0.2rem;
 }
 
-
 h1 {
 	margin: 2rem 0;
 	font-size: 3rem;
@@ -99,9 +98,14 @@ a:visited {
 	content: "#";
 }
 
+.projects h2 {
+	margin: 1rem 0;
+}
+
 .projects a {
 	margin: 0 2rem;
 }
+
 .projects p > a {
 	margin: 0;
 }
