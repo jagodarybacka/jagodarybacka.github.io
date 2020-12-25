@@ -1,0 +1,31 @@
+@import 'mixins/index';
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Playfair+Display:ital@0;1&family=Alata&family=Hammersmith+One&display=swap');
+
+.App {
+  width: calc(100vw - 40px);
+  height: calc(100vh - 40px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $theme__background-light;
+  border: 20px solid black;
+}
+
+.App__circle {
+  width: 40em;
+  height: 40em;
+  border-radius: 50%;
+  text-align: center;
+  color: $theme__text;
+  background: $theme__black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    font-style: italic;
+    padding: 3em;
+  }
+}
