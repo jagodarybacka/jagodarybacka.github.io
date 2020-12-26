@@ -1,0 +1,23 @@
+@import 'mixins/index';
+
+.Tile {
+  width: 20em;
+  height: 20em;
+  background: $theme__background-dark;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.Tile__text {
+  margin: 0 0 .75em;
+  font-size: 1.7em;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 3px;
+}
+
+.Tile__subtext {
+  opacity: .5;
+  font-size: 1.2em;
+  margin-top: auto;
+}

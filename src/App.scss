@@ -2,8 +2,8 @@
 @import 'mixins/index';
 
 .App {
-  width: calc(100vw - 2em);
-  height: calc(100vh - 2em);
+  width: calc(100% - 2em);
+  height: 100%;
   background-color: $theme__background-light;
   border: 1em solid black;
   color: $theme__text;
