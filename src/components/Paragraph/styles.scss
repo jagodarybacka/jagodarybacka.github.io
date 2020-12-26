@@ -1,0 +1,23 @@
+.Paragraph {
+  margin-bottom: 5em;
+}
+
+.Paragraph__secondary {
+  opacity: .5;
+  font-size: 1.2em;
+  margin: 0 0 .5em;
+}
+
+.Paragraph__header {
+  font-size: 2.4em;
+  margin: 0 0 .75em;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 3px;
+}
+
+.Paragraph__main {
+  font-size: 1.5em;
+  line-height: 1.6em;
+  word-spacing: 2px;
+  margin: 0;
+}
