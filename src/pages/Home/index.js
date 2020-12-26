@@ -7,7 +7,7 @@ function HomePage() {
     <div className="Home">
       <div className="Home__circle">
         <p className="Home__description">
-          Hi. My name is Berry.<br />
+          Hi. My name is Berry<br />
           I develop web applications<br />and<br />I teach Javascript
         </p>
       </div>

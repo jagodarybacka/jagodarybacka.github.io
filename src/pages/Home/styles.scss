@@ -7,8 +7,8 @@
 }
 
 .Home__circle {
-  width: 40em;
-  height: 40em;
+  width: 25em;
+  height: 25em;
   border-radius: 50%;
   text-align: center;
   color: $theme__text;
@@ -17,34 +17,34 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: calc(50% - 20em);
-  left: calc(50% - 20em);
+  top: calc(50% - 12.5em);
+  left: calc(50% - 12.5em);
 }
 
 .Home__description {
   font-family: 'Playfair Display', serif;
-  font-size: 2em;
+  font-size: 1.6em;
+  line-height: 1.4em;
   font-style: italic;
-  padding: 3em;
 }
 
-.Home__link {
-  a, button {
-    display: block;
-    padding: 0;
-    margin: 0;
-    border: 0;
+.Home__link > * {
+  display: block;
+  padding: 0;
+  margin: 0;
+  border: 0;
 
-    background: transparent;
-    color: $theme__text;
+  background: transparent;
+  color: $theme__text;
+  cursor: pointer;
 
-    font-family: 'Hammersmith One', serif;
-    font-size: 2em;
-    line-height: 1em;
-    text-decoration: 0;
-    text-transform: uppercase;
-  }
+  font-family: 'Hammersmith One', serif;
+  font-size: 3em;
+  line-height: 1em;
+  text-decoration: 0;
+  text-transform: uppercase;
 }
+
 .Home__link-list {
   display: flex;
   justify-content: center;
@@ -64,16 +64,29 @@
 .Home__link--left,
 .Home__link--right {
   position: absolute;
-  width: 10em;
+  width: 20em;
   text-align: center;
   top: 50%;
 }
 
 .Home__link--left {
   transform: rotate(90deg);
-  left: -2em;
+  left: -7em;
 }
 .Home__link--right {
   transform: rotate(-90deg);
-  right: -2em;
+  right: -7em;
+}
+
+@media screen and (max-width: 550px) {
+  .Home__link--left,
+  .Home__link--right {
+    margin-top: 1em;
+    width: 100%;
+    transform: none;
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+  }
 }
