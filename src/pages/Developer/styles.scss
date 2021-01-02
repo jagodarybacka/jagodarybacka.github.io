@@ -1,7 +1,20 @@
-.DeveloperPage {
+.Developer {
   padding: 3em 5em;
 
   .Paragraph {
     width: 60%;
   }
+}
+
+.Developer__experience {
+  display: flex;
+  flex-wrap: wrap;
+
+  > .Tile {
+    margin: 0 2em 2em 0;
+  }
+}
+
+.Developer__section {
+  margin-bottom: 10em;
 }
