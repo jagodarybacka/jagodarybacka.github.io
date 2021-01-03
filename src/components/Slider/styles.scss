@@ -1,0 +1,14 @@
+@import 'mixins/index';
+
+.Slider {
+  font-family: 'Hammersmith One', serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: $theme__text-light;
+  font-size: 10rem;
+  margin: 2rem 0 2rem 0rem;
+
+  &::first-letter {
+    color: $theme__text;
+  }
+}

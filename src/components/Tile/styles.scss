@@ -1,8 +1,7 @@
 @import 'mixins/index';
 
 .Tile {
-  width: 20em;
-  height: 20em;
+  height: 10em;
   background: $theme__background-dark;
   padding: 2em;
   display: flex;

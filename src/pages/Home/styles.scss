@@ -43,6 +43,10 @@
   line-height: 1em;
   text-decoration: 0;
   text-transform: uppercase;
+
+  &:hover {
+    color: $theme__text-light;
+  }
 }
 
 .Home__link-list {

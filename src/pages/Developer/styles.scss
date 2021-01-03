@@ -1,20 +1,23 @@
-.Developer {
-  padding: 3em 5em;
+@import 'mixins/index';
 
-  .Paragraph {
-    width: 60%;
-  }
+.Developer {
+  width: 60%;
+  margin: auto;
 }
 
 .Developer__experience {
   display: flex;
   flex-wrap: wrap;
-
   > .Tile {
-    margin: 0 2em 2em 0;
+    flex: 1 1 auto;
+    margin: 1em 1em 0 0;
   }
 }
 
 .Developer__section {
   margin-bottom: 10em;
+}
+
+.Developer__section-row {
+  display: flex;
 }

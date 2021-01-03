@@ -3,12 +3,14 @@ import Header from 'components/Header';
 import Paragraph from 'components/Paragraph';
 import Tags from 'components/Tags';
 import Tile from 'components/Tile';
+import Slider from 'components/Slider';
 import CONTENT from './content';
 import './styles.scss';
 
 function DeveloperPage() {
   return (
     <div className="Developer">
+      <Slider>Developer</Slider>
       <section className="Developer__section">
         <Header>skillset</Header>
         <Paragraph main={CONTENT.SKILLSET} />
@@ -35,10 +37,13 @@ function DeveloperPage() {
 
       <section className="Developer__section">
         <Header>values</Header>
-        <Paragraph
-          header="attention to details"
-          main={CONTENT.VALUES_DETAILS}
-        />
+
+        <div className="Developer__section-row">
+          <Paragraph
+            header="attention to details"
+            main={CONTENT.VALUES_DETAILS}
+          />
+        </div>
         <Paragraph
           header="teamwork"
           main={CONTENT.VALUES_TEAMWORK}

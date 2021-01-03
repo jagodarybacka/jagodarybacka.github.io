@@ -1,12 +1,14 @@
 import React from 'react';
 import Header from 'components/Header';
 import Paragraph from 'components/Paragraph';
+import Slider from 'components/Slider';
 import CONTENT from './content';
 import './styles.scss';
 
 function MentorPage() {
   return (
     <div className="Mentor">
+      <Slider>Mentor</Slider>
       <section className="Mentor__section">
         <Header>about</Header>
         <Paragraph main={CONTENT.ABOUT} />
