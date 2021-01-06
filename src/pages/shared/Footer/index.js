@@ -4,10 +4,8 @@ import p from 'prop-types';
 import './styles.scss';
 
 function Footer({ style }) {
-  const backgroundColor = style.borderColor;
-
   return (
-    <footer className="Footer" style={{ backgroundColor }}>
+    <footer className="Footer" style={style}>
       <p className="Footer__text">You can find me here</p>
       <div className="Footer__links">
         <a className="Footer__link" href="mailto: jagoda.er@gmail.com">Email</a>

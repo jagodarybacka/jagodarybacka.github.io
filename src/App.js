@@ -12,25 +12,34 @@ const ROUTES = {
   HOME: '/'
 };
 
+const COLORS = {
+  LIGHT: '#f20089',
+  DARK: '#2d00f7'
+};
+
 function App() {
   const location = useLocation();
-  const [ styles, setStyles ] = useState({});
+  const [ borderStyle, setBorderStyles ] = useState({});
+  const [ footerStyle, setFooterStyles ] = useState({});
 
   useEffect(() => {
+    const getBorderStyle = (top, bottom) => ( { borderImage: `linear-gradient(to bottom, ${ top } , ${ bottom }) 1` });
     switch (location.pathname) {
     case ROUTES.MENTOR:
-      setStyles({ borderColor: '#cb8e7e', backgroundColor: '#000000' });
+      setBorderStyles(getBorderStyle(COLORS.LIGHT, COLORS.DARK));
+      setFooterStyles({ background: COLORS.DARK });
       break;
     case ROUTES.DEVELOPER:
-      setStyles({ borderColor: '#253439', backgroundColor: '#000000' });
+      setBorderStyles(getBorderStyle(COLORS.DARK, COLORS.LIGHT ));
+      setFooterStyles({ background: COLORS.LIGHT });
       break;
     default:
-      setStyles({});
+      setBorderStyles({});
     }
   }, [location]);
 
   return (
-    <div className="App" style={styles}>
+    <div className="App" style={borderStyle}>
       <Switch>
         <Route path="/developer">
           <DeveloperPage />
@@ -42,7 +51,7 @@ function App() {
           <HomePage />
         </Route>
       </Switch>
-      {location.pathname === ROUTES.HOME || <Footer style={styles}/>}
+      {location.pathname === ROUTES.HOME || <Footer style={footerStyle}/>}
     </div>
   );
 }

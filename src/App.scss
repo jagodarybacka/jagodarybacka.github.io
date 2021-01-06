@@ -4,8 +4,10 @@
 .App {
   width: calc(100% - 2em);
   height: 100%;
-  background-color: $theme__background-light;
-  border: 1em solid black;
+  background-color: $theme__black;
+  border-width: 1em;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, $theme__background-light, $theme__background-dark) 1;
   color: $theme__text;
   font-family: 'Alata', sans-serif;
 }

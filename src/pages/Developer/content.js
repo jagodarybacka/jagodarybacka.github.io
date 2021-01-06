@@ -1,15 +1,4 @@
 const PROJECTS = [ {
-  type: 'Experiments',
-  title: 'Gandalf fights',
-  description: 'Playing around with CSS.',
-  githubLink: 'https://github.com/jagodarybacka/gandalf-fights',
-  demoLink: 'https://jagodarybacka.github.io/gandalf-fights/'
-}, {
-  type: 'Experiments',
-  title: 'Playground',
-  description: 'Repository for various mini projects. Algorithms, visualizations etc.',
-  githubLink: 'https://github.com/jagodarybacka/playground'
-}, {
   type: 'Project',
   title: 'Focusify',
   description: 'Using Spotify API to create a pomodoro timer with music.',
@@ -20,6 +9,17 @@ const PROJECTS = [ {
   description: 'Final university project. Digital diary where user keeps track of headaches, auras and migraines. Created with MERN stack as PWA.',
   githubLink: 'https://github.com/jagodarybacka/migraine-app',
   demoLink: 'https://migraine-app-project.herokuapp.com/'
+}, {
+  type: 'Experiments',
+  title: 'Gandalf fights',
+  description: 'Playing around with CSS.',
+  githubLink: 'https://github.com/jagodarybacka/gandalf-fights',
+  demoLink: 'https://jagodarybacka.github.io/gandalf-fights/'
+}, {
+  type: 'Experiments',
+  title: 'Playground',
+  description: 'Repository for various mini projects. Algorithms, visualizations etc.',
+  githubLink: 'https://github.com/jagodarybacka/playground'
 }, {
   type: 'Presentation',
   title: 'Iterated Prisoner\'s Dilemma Presentation',
