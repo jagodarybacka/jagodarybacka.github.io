@@ -3,6 +3,7 @@
 .Developer {
   width: 60%;
   margin: auto;
+  position: relative;
 }
 
 .Developer__experience {
@@ -14,8 +15,35 @@
   }
 }
 
+.Developer__projects {
+  .Paragraph {
+    margin-bottom: 2em;
+    width: 70%;
+  }
+}
+
+.Developer__link {
+  font-size: 1.5em;
+  font-family: 'Hammersmith One', serif;
+  text-transform: uppercase;
+  text-decoration: 0;
+  color: #000;
+  background: $theme__text;
+  cursor: pointer;
+  padding: .25em .5em;
+  margin-right: .5em;
+}
+
+.Developer__project {
+  margin-bottom: 5em;
+}
+
 .Developer__section {
   margin-bottom: 10em;
+
+  &.is-centered {
+    text-align: center;
+  }
 }
 
 .Developer__section-row {

@@ -33,7 +33,7 @@ function MentorPage() {
       </section>
 
       <section className="Mentor__section">
-        <p>Contact - TODO</p>
+        <Header>contact me to become my mentee</Header>
       </section>
 
     </div>

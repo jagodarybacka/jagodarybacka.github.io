@@ -5,7 +5,8 @@ import './styles.scss';
 function Slider({ children, turnLeft, turnRight }) {
   return (
     <div className="Slider">
-      {children}
+      <h4 className="Slider__secondary">Berry as a</h4>
+      <h1 className="Slider__main">{children}</h1>
     </div>
   );
 }

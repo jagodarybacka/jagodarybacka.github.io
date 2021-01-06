@@ -8,6 +8,17 @@ import CONTENT from './content';
 import './styles.scss';
 
 function DeveloperPage() {
+  const projects = CONTENT.PROJECTS.map((item, i) => (
+    <div className="Developer__project" key={i}>
+      <Paragraph
+        secondary={item.type}
+        header={item.title}
+        main={item.description} />
+      {item.githubLink && <a className="Developer__link" href={item.githubLink} target="_blank" rel="noopener noreferrer">Github</a>}
+      {item.demoLink && <a className="Developer__link" href={item.demoLink} target="_blank" rel="noopener noreferrer">Demo</a>}
+    </div>
+  ));
+
   return (
     <div className="Developer">
       <Slider>Developer</Slider>
@@ -38,12 +49,10 @@ function DeveloperPage() {
       <section className="Developer__section">
         <Header>values</Header>
 
-        <div className="Developer__section-row">
-          <Paragraph
-            header="attention to details"
-            main={CONTENT.VALUES_DETAILS}
-          />
-        </div>
+        <Paragraph
+          header="attention to details"
+          main={CONTENT.VALUES_DETAILS}
+        />
         <Paragraph
           header="teamwork"
           main={CONTENT.VALUES_TEAMWORK}
@@ -54,15 +63,14 @@ function DeveloperPage() {
         />
       </section>
 
-      <section className="Developer__section">
+      <section className="Developer__section Developer__projects">
         <Header>projects</Header>
-        <p>TODO</p>
+        {projects}
       </section>
 
-      <section className="Developer__section">
-        <p>Contact - TODO</p>
+      <section className="Developer__section is-centered">
+        <Header>contact me to work together</Header>
       </section>
-
     </div>
   );
 }

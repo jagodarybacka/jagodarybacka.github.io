@@ -3,11 +3,13 @@ import { Switch, Route, useLocation } from 'react-router-dom';
 import HomePage from 'pages/Home';
 import DeveloperPage from 'pages/Developer';
 import MentorPage from 'pages/Mentor';
+import Footer from 'pages/shared/Footer';
 import './App.scss';
 
 const ROUTES = {
   MENTOR: '/mentor',
-  DEVELOPER: '/developer'
+  DEVELOPER: '/developer',
+  HOME: '/'
 };
 
 function App() {
@@ -40,6 +42,7 @@ function App() {
           <HomePage />
         </Route>
       </Switch>
+      {location.pathname === ROUTES.HOME || <Footer style={styles}/>}
     </div>
   );
 }
