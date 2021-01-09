@@ -5,9 +5,9 @@ import './styles.scss';
 
 function Footer({ style }) {
   return (
-    <footer className="Footer" style={style}>
+    <footer className="Footer" data-hover-hidden style={style}>
       <p className="Footer__text">You can find me here</p>
-      <div className="Footer__links">
+      <div className="Footer__links" data-hover-hidden>
         <a className="Footer__link" href="mailto: jagoda.er@gmail.com">Email</a>
         <a className="Footer__link" target="_blank" rel="noopener noreferrer" href="https://github.com/jagodarybacka">Github</a>
         <a className="Footer__link" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/jagoda-rybacka">Linkedin</a>

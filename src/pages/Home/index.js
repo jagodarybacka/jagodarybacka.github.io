@@ -19,16 +19,16 @@ function HomePage() {
       </div>
       <ul className="Home__link-list">
         <li className="Home__link">
-          <a href="mailto: jagoda.er@gmail.com">DM</a>
+          <a data-hover-text="Write email" href="mailto: jagoda.er@gmail.com">DM</a>
         </li>
         <li className="Home__link">
-          <a target="_blank" rel="noopener noreferrer" href="https://github.com/jagodarybacka">GH</a>
+          <a data-hover-text="Github" target="_blank" rel="noopener noreferrer" href="https://github.com/jagodarybacka">GH</a>
         </li>
         <li className="Home__link">
-          <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/jagoda-rybacka">IN</a>
+          <a data-hover-text="LinkedIn" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/jagoda-rybacka">IN</a>
         </li>
         <li className="Home__link">
-          <a target="_blank" rel="noopener noreferrer" href="https://www.fiverr.com/the_berry">FI</a>
+          <a data-hover-text="Fiverr" target="_blank" rel="noopener noreferrer" href="https://www.fiverr.com/the_berry">FI</a>
         </li>
       </ul>
 

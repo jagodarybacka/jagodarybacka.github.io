@@ -12,6 +12,11 @@
   font-family: 'Alata', sans-serif;
 }
 
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
 ::-moz-selection {
   color: $theme__text;
   background: $theme__background-light;

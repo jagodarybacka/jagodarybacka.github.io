@@ -1,4 +1,5 @@
 .Cursor {
+  box-sizing: border-box;
   width: 2.5em;
   height: 2.5em;
   border: 2px solid #fff;
@@ -7,8 +8,22 @@
   will-change: top, left;
   z-index: 1000;
   pointer-events: none;
-  overflow: hidden;
   opacity: 0;
+  transition: opacity 500ms, transform 100ms;
+}
 
-  transition: opacity 500ms;
+.Cursor__text-wrapper {
+  position: relative;
+}
+
+.Cursor__text {
+  position: absolute;
+  text-align: center;
+  left: calc(-50% - 1em);
+  top: -1.5em;
+  width: 100px;
+  margin: 0;
+  font-family: 'Hammersmith One', serif;
+  text-transform: uppercase;
+  transition: opacity 500ms, transform 500ms;
 }
