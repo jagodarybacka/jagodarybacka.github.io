@@ -32,7 +32,7 @@ function MentorPage() {
           main={CONTENT.VALUES_EXPERIENCE} />
       </section>
 
-      <section className="Mentor__section">
+      <section onClick={() => navigator.clipboard.writeText(CONTENT.EMAIL)} className="Mentor__section has-padding is-clickable is-centered" data-hover-text="Copy email">
         <Header>contact me to become my mentee</Header>
       </section>
 

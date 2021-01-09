@@ -28,10 +28,19 @@
   text-transform: uppercase;
   text-decoration: 0;
   color: #000;
-  background: $theme__text;
+  background: linear-gradient(to right, $theme__text-light, $theme__text-light 50%, $theme__text 50%);
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 300ms ease, color 300ms ease;
   cursor: pointer;
   padding: .25em .5em;
   margin-right: .5em;
+
+  &:hover {
+    color: $theme__text;
+    background-position: 0 100%;
+  }
+
 }
 
 .Developer__project {
@@ -41,8 +50,9 @@
 .Developer__section {
   margin-bottom: 10em;
 
-  &.is-centered {
-    text-align: center;
+  &.has-padding {
+    margin: 0;
+    padding: 5em 0;
   }
 }
 

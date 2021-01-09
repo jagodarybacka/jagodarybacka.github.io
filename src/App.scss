@@ -17,6 +17,14 @@
   pointer-events: none;
 }
 
+.is-centered {
+  text-align: center;
+}
+
+.is-clickable {
+  cursor: pointer;
+}
+
 ::-moz-selection {
   color: $theme__text;
   background: $theme__background-light;

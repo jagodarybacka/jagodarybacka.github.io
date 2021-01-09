@@ -68,7 +68,7 @@ function DeveloperPage() {
         {projects}
       </section>
 
-      <section className="Developer__section is-centered">
+      <section onClick={() => navigator.clipboard.writeText(CONTENT.EMAIL)} className="Developer__section has-padding is-clickable is-centered" data-hover-text="Copy email">
         <Header>contact me to work together</Header>
       </section>
     </div>

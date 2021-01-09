@@ -31,13 +31,20 @@
   font-style: italic;
 }
 
-.Home__link > * {
+.Home__link > a {
   display: block;
   padding: 0;
   margin: 0;
   border: 0;
 
-  background: transparent;
+  background: linear-gradient(to right, $theme__text-light, $theme__text-light 50%, $theme__text 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 500ms ease;
+
   color: $theme__text;
   cursor: pointer;
 
@@ -49,6 +56,7 @@
 
   &:hover {
     color: $theme__text-light;
+    background-position: 0 100%;
   }
 }
 

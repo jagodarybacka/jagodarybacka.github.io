@@ -41,11 +41,12 @@ function Cursor() {
 function useStyles(mousePosition) {
   const { x, y } = mousePosition;
   const hoveredEl = document.elementFromPoint(x, y);
-  const innerText = hoveredEl?.dataset.hoverText || '';
+  const getDataAttr = attr => hoveredEl?.dataset[attr] || hoveredEl?.parentElement?.dataset[attr] || '';
 
-  const hoverHidden = !!(hoveredEl?.dataset.hoverHidden || hoveredEl?.parentElement?.dataset.hoverHidden);
+  const innerText = getDataAttr('hoverText');
+  const hoverHidden = getDataAttr('hoverHidden');
+
   const isHidden = x === null || y === null || hoverHidden;
-  console.log(hoveredEl);
 
   return {
     innerText,

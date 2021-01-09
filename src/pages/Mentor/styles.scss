@@ -1,12 +1,13 @@
 .Mentor {
   width: 60%;
   margin: auto;
-
-  .Slider {
-
-  }
 }
 
 .Mentor__section {
   margin-bottom: 10em;
+
+  &.has-padding {
+    margin: 0;
+    padding: 5em 0;
+  }
 }
