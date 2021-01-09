@@ -14,8 +14,8 @@ function DeveloperPage() {
         secondary={item.type}
         header={item.title}
         main={item.description} />
-      {item.githubLink && <a className="Developer__link" href={item.githubLink} target="_blank" rel="noopener noreferrer">Github</a>}
-      {item.demoLink && <a className="Developer__link" href={item.demoLink} target="_blank" rel="noopener noreferrer">Demo</a>}
+      {item.githubLink && <a className="Developer__link" href={item.githubLink} data-hover-small target="_blank" rel="noopener noreferrer">Github</a>}
+      {item.demoLink && <a className="Developer__link" href={item.demoLink} data-hover-small target="_blank" rel="noopener noreferrer">Demo</a>}
     </div>
   ));
 

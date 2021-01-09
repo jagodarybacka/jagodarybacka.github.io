@@ -45,16 +45,25 @@ function useStyles(mousePosition) {
 
   const innerText = getDataAttr('hoverText');
   const hoverHidden = getDataAttr('hoverHidden');
+  const isSmall = getDataAttr('hoverSmall');
 
   const isHidden = x === null || y === null || hoverHidden;
+
+  let scale = 1;
+  if (innerText) {
+    scale = 1.4;
+  } else if (isSmall) {
+    scale = 0.5;
+  }
 
   return {
     innerText,
     style: {
       top: y - RADIUS,
       left: x - RADIUS,
+      background: isSmall ? 'white' : 'transparent',
       opacity: isHidden ? 0 : 1,
-      transform: `scale(${ innerText ? 1.4 : 1 })`
+      transform: `scale(${ scale })`
     }
   };
 }

@@ -11,10 +11,10 @@ function HomePage() {
           I develop web applications<br />and<br />I teach Javascript
         </p>
       </div>
-      <div className="Home__link Home__link--left">
+      <div data-hover-small className="Home__link Home__link--left">
         <Link to="/developer">Developer</Link>
       </div>
-      <div className="Home__link Home__link--right">
+      <div data-hover-small className="Home__link Home__link--right">
         <Link to="/mentor">Mentor</Link>
       </div>
       <ul className="Home__link-list">
