@@ -11,3 +11,12 @@
   color: $theme__text;
   font-family: 'Alata', sans-serif;
 }
+
+::-moz-selection {
+  color: $theme__text;
+  background: $theme__background-light;
+}
+::selection  {
+  color: $theme__text;
+  background: $theme__background-light;
+}

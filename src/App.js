@@ -4,6 +4,7 @@ import HomePage from 'pages/Home';
 import DeveloperPage from 'pages/Developer';
 import MentorPage from 'pages/Mentor';
 import Footer from 'pages/shared/Footer';
+import Cursor from 'components/Cursor';
 import './App.scss';
 
 const ROUTES = {
@@ -40,6 +41,7 @@ function App() {
 
   return (
     <div className="App" style={borderStyle}>
+      <Cursor />
       <Switch>
         <Route path="/developer">
           <DeveloperPage />

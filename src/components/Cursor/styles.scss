@@ -1,0 +1,14 @@
+.Cursor {
+  width: 2.5em;
+  height: 2.5em;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  position: fixed;
+  will-change: top, left;
+  z-index: 1000;
+  pointer-events: none;
+  overflow: hidden;
+  opacity: 0;
+
+  transition: opacity 500ms;
+}
