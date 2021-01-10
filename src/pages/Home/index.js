@@ -1,21 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Blob from 'components/Blob';
 import './styles.scss';
 
 function HomePage() {
   return (
     <div className="Home">
-      <div className="Home__circle">
-        <p className="Home__description">
-          Hi. My name is Berry<br />
-          I develop web applications<br />and<br />I teach Javascript
-        </p>
-      </div>
-      <div data-hover-small className="Home__link Home__link--left">
-        <Link to="/developer">Developer</Link>
-      </div>
-      <div data-hover-small className="Home__link Home__link--right">
-        <Link to="/mentor">Mentor</Link>
+      <Blob />
+      <h1 className="Home__title">Berry Rybacka</h1>
+      <div className="Home__pages-list">
+        <div data-hover-small className="Home__link">
+          <Link to="/developer">Developer</Link>
+        </div>
+        <div data-hover-small className="Home__link">
+          <Link to="/mentor">Mentor</Link>
+        </div>
       </div>
       <ul className="Home__link-list">
         <li className="Home__link">
