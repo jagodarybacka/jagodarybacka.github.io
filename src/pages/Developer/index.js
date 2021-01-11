@@ -4,8 +4,10 @@ import Paragraph from 'components/Paragraph';
 import Tags from 'components/Tags';
 import Tile from 'components/Tile';
 import Slider from 'components/Slider';
+import Contact from 'pages/shared/Contact';
 import CONTENT from './content';
 import './styles.scss';
+
 
 function DeveloperPage() {
   const projects = CONTENT.PROJECTS.map((item, i) => (
@@ -68,8 +70,8 @@ function DeveloperPage() {
         {projects}
       </section>
 
-      <section onClick={() => navigator.clipboard.writeText(CONTENT.EMAIL)} className="Developer__section has-padding is-clickable is-centered" data-hover-text="Copy email">
-        <Header>contact me to work together</Header>
+      <section className="Developer__section no-margin">
+        <Contact email={CONTENT.EMAIL}/>
       </section>
     </div>
   );

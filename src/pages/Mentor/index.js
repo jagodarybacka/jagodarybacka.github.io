@@ -2,6 +2,7 @@ import React from 'react';
 import Header from 'components/Header';
 import Paragraph from 'components/Paragraph';
 import Slider from 'components/Slider';
+import Contact from 'pages/shared/Contact';
 import CONTENT from './content';
 import './styles.scss';
 
@@ -32,8 +33,8 @@ function MentorPage() {
           main={CONTENT.VALUES_EXPERIENCE} />
       </section>
 
-      <section onClick={() => navigator.clipboard.writeText(CONTENT.EMAIL)} className="Mentor__section has-padding is-clickable is-centered" data-hover-text="Copy email">
-        <Header>contact me to become my mentee</Header>
+      <section className="Mentor__section no-margin">
+        <Contact email={CONTENT.EMAIL} />
       </section>
 
     </div>
