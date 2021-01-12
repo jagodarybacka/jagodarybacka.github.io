@@ -4,6 +4,7 @@ import Paragraph from 'components/Paragraph';
 import Tags from 'components/Tags';
 import Tile from 'components/Tile';
 import Slider from 'components/Slider';
+import Back from 'components/Back';
 import Contact from 'pages/shared/Contact';
 import CONTENT from './content';
 import './styles.scss';
@@ -23,6 +24,7 @@ function DeveloperPage() {
 
   return (
     <div className="Developer">
+      <Back />
       <Slider>Developer</Slider>
       <section className="Developer__section">
         <Header>skillset</Header>

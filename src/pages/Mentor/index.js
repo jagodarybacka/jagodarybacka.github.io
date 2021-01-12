@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from 'components/Header';
 import Paragraph from 'components/Paragraph';
+import Back from 'components/Back';
 import Slider from 'components/Slider';
 import Contact from 'pages/shared/Contact';
 import CONTENT from './content';
@@ -9,6 +10,7 @@ import './styles.scss';
 function MentorPage() {
   return (
     <div className="Mentor">
+      <Back />
       <Slider>Mentor</Slider>
       <section className="Mentor__section">
         <Header>about</Header>
