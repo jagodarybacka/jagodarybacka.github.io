@@ -5,6 +5,7 @@ import DeveloperPage from 'pages/Developer';
 import MentorPage from 'pages/Mentor';
 import Footer from 'pages/shared/Footer';
 import Cursor from 'components/Cursor';
+import isMobileBrowser from 'mixins/isMobileBrowser';
 import './App.scss';
 
 const ROUTES = {
@@ -20,6 +21,7 @@ const COLORS = {
 
 function App() {
   const location = useLocation();
+  const isMobile = isMobileBrowser();
   const [ borderStyle, setBorderStyles ] = useState({});
   const [ footerStyle, setFooterStyles ] = useState({});
 
@@ -39,9 +41,10 @@ function App() {
     }
   }, [location]);
 
+
   return (
     <div className="App" style={borderStyle}>
-      <Cursor />
+      {isMobile ? '' : <Cursor />}
       <Switch>
         <Route path="/developer">
           <DeveloperPage />

@@ -1,7 +1,6 @@
 @import 'mixins/index';
 
 .Developer {
-  width: 60%;
   margin: auto;
   position: relative;
 }
@@ -18,7 +17,7 @@
 .Developer__projects {
   .Paragraph {
     margin-bottom: 2em;
-    width: 70%;
+    // width: 70%;
   }
 }
 
@@ -57,4 +56,22 @@
 
 .Developer__section-row {
   display: flex;
+}
+
+@media screen and (min-width: 320px) {
+  .Developer {
+    width: calc(100% - 10em);
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .Developer {
+    width: calc(100% - 20em);
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .Developer {
+    width: calc(100% - 30em);
+  }
 }

@@ -1,5 +1,5 @@
 .Mentor {
-  width: 60%;
+  width: 90%;
   margin: auto;
 }
 
@@ -8,5 +8,23 @@
 
   &.no-margin {
     margin: 0;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .Mentor {
+    width: calc(100% - 10em);
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .Mentor {
+    width: calc(100% - 20em);
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .Mentor {
+    width: calc(100% - 30em);
   }
 }

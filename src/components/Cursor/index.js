@@ -26,7 +26,7 @@ function Cursor() {
 
   const textClasses = classnames({
     'Cursor__text': true,
-    'is-hidden': !innerText
+    'is-hidden': true // !innerText
   });
 
   return (

@@ -5,10 +5,10 @@
   text-transform: uppercase;
   text-align: center;
   margin: 4rem 0;
+  width: 100%;
 }
 
 .Slider__main {
-  font-size: 10rem;
   color: $theme__text-light;
   margin: 0;
   &::first-letter {
@@ -20,4 +20,23 @@
   color: $theme__text;
   font-size: 2rem;
   margin: 0;
+}
+
+
+@media screen and (min-width: 320px) {
+  .Slider__main {
+    font-size: 5em;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .Slider__main {
+    font-size: 7em
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .Slider__main {
+    font-size: 8em;
+  }
 }
