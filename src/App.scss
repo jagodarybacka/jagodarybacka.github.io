@@ -10,6 +10,11 @@
   border-image: linear-gradient(to bottom, $theme__background-light, $theme__background-dark) 1;
   color: $theme__text;
   font-family: 'Alata', sans-serif;
+  cursor: none;
+
+  a {
+    cursor: none;
+  }
 }
 
 .is-hidden {
@@ -19,10 +24,6 @@
 
 .is-centered {
   text-align: center;
-}
-
-.is-clickable {
-  cursor: pointer;
 }
 
 ::-moz-selection {

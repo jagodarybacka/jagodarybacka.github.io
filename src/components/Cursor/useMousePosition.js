@@ -3,7 +3,8 @@ import { useEffect, useState } from 'react';
 const useMousePosition = () => {
   const [ mousePosition, setMousePosition ] = useState({ x: null, y: null });
 
-  const updateMouse = ev => setMousePosition({ x: ev.clientX, y: ev.clientY });
+  const updateMouse = ev => requestAnimationFrame(() => setMousePosition({ x: ev.clientX, y: ev.clientY }));
+
 
   useEffect(() => {
     window.addEventListener('mousemove', updateMouse);

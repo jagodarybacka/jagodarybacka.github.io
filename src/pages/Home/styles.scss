@@ -41,13 +41,11 @@
   transition: background-position 500ms ease;
 
   color: $theme__text;
-  cursor: pointer;
 
   font-family: 'Hammersmith One', serif;
-  font-size: 3em;
+  font-size: 1.75em;
   line-height: 1em;
   text-decoration: 0;
-  text-transform: uppercase;
 
   &:hover {
     color: $theme__text-light;

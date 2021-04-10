@@ -1,17 +1,19 @@
+@import 'mixins/index';
+
 .Cursor {
   box-sizing: border-box;
   width: 2.5em;
   height: 2.5em;
-  border: 2px solid #fff;
   border-radius: 50%;
   position: fixed;
-  will-change: top, left;
+  will-change: top, left, opacity;
   z-index: 1000;
   pointer-events: none;
+  background-color: $theme__text;
+  mix-blend-mode: difference;
   opacity: 0;
   transition:
     opacity 500ms,
-    background 500ms,
     transform 100ms;
 }
 

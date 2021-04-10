@@ -9,7 +9,7 @@ export default function Contact({ email }) {
     .then(() => setIsCopied(true));
 
   return (
-    <div className="Contact is-clickable is-centered" onClick={() => copyEmail()} data-hover-text="Copy email">
+    <div className="Contact is-centered" onClick={() => copyEmail()} data-hover-big>
       <Header>contact me to work together</Header>
       <p className={`Contact__info ${ isCopied ? '' : 'is-hidden' }`}>Email copied. Drop me a line.</p>
     </div>
