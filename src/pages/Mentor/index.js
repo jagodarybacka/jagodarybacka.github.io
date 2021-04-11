@@ -36,7 +36,7 @@ function MentorPage() {
       </section>
 
       <section className="Mentor__section no-margin">
-        <Contact email={CONTENT.EMAIL} />
+        <Contact />
       </section>
 
     </div>

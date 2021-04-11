@@ -8,7 +8,7 @@ function Footer({ style }) {
     <footer className="Footer" style={style}>
       <p className="Footer__text">You can find me here</p>
       <div className="Footer__links" data-hover-small>
-        <a className="Footer__link" href="mailto: jagoda.er@gmail.com">Email</a>
+        <a className="Footer__link" href="mailto: berry.rybacka@gmail.com">Email</a>
         <a className="Footer__link" target="_blank" rel="noopener noreferrer" href="https://github.com/jagodarybacka">Github</a>
         <a className="Footer__link" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/jagoda-rybacka">Linkedin</a>
         <a className="Footer__link" target="_blank" rel="noopener noreferrer" href="https://www.fiverr.com/the_berry">Fiverr</a>

@@ -18,7 +18,7 @@ function HomePage() {
       </div>
       <ul className="Home__link-list">
         <li className="Home__link">
-          <a data-hover-small href="mailto: jagoda.er@gmail.com">Email</a>
+          <a data-hover-small href="mailto: berry.rybacka@gmail.com">Email</a>
         </li>
         <li className="Home__link">
           <a data-hover-small target="_blank" rel="noopener noreferrer" href="https://github.com/jagodarybacka">Github</a>

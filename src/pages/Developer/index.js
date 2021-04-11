@@ -73,7 +73,7 @@ function DeveloperPage() {
       </section>
 
       <section className="Developer__section no-margin">
-        <Contact email={CONTENT.EMAIL}/>
+        <Contact />
       </section>
     </div>
   );

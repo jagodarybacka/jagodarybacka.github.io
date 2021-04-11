@@ -3,7 +3,7 @@ import p from 'prop-types';
 import Header from 'components/Header';
 import './styles.scss';
 
-export default function Contact({ email }) {
+export default function Contact({ email = 'berry.rybacka@gmail.com' }) {
   const [ isCopied, setIsCopied ] = useState(false);
   const copyEmail = () => navigator.clipboard.writeText(email)
     .then(() => setIsCopied(true));
