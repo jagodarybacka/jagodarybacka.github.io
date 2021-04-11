@@ -1,6 +1,5 @@
 import React from 'react';
 import useMousePosition from './useMousePosition';
-import classnames from 'classnames';
 import './styles.scss';
 
 const RADIUS = 16;
@@ -12,16 +11,9 @@ const SCALE = {
 
 function Cursor() {
   const mousePosition = useMousePosition();
-  const { style, isHidden } = useStyles(mousePosition);
+  const style = useStyles(mousePosition);
 
-  const cursorClasses = classnames({
-    'Cursor': true,
-    'is-hidden': isHidden
-  });
-
-  return (
-    <div className={cursorClasses} style={style}></div>
-  );
+  return <div className="Cursor" style={style}></div>;
 }
 
 function useStyles(mousePosition) {
@@ -38,13 +30,10 @@ function useStyles(mousePosition) {
   const scale = isBig ? SCALE.MAX : isSmall ? SCALE.MIN : SCALE.DEFAULT;
 
   return {
-    isHidden,
-    style: {
-      top: y - RADIUS,
-      left: x - RADIUS,
-      opacity: isHidden ? 0 : 1,
-      transform: `scale(${ scale })`
-    }
+    top: y - RADIUS,
+    left: x - RADIUS,
+    opacity: isHidden ? 0 : 1,
+    transform: `scale(${ scale })`
   };
 }
 

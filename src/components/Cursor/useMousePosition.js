@@ -1,18 +1,11 @@
-import { useEffect, useState } from 'react';
+import { useLayoutEffect, useState } from 'react';
 
 const useMousePosition = () => {
   const [ mousePosition, setMousePosition ] = useState({ x: null, y: null });
 
-  const updateMouse = ev => requestAnimationFrame(() => setMousePosition({ x: ev.clientX, y: ev.clientY }));
-
-
-  useEffect(() => {
-    window.addEventListener('mousemove', updateMouse);
-
-    return () => {
-      window.removeEventListener('mousemove', updateMouse);
-    };
-  }, []);
+  useLayoutEffect(() => {
+    document.onmousemove = ev => setMousePosition({ x: ev.clientX, y: ev.clientY });
+  });
 
   return { x: mousePosition.x, y: mousePosition.y };
 };

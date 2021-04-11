@@ -6,30 +6,11 @@
   height: 2.5em;
   border-radius: 50%;
   position: fixed;
-  will-change: top, left, opacity;
+  will-change: top, left, opacity, transform;
   z-index: 1000;
   pointer-events: none;
   background-color: $theme__text;
   mix-blend-mode: difference;
   opacity: 0;
-  transition:
-    opacity 500ms,
-    transform 100ms;
-}
-
-.Cursor__text-wrapper {
-  position: relative;
-}
-
-.Cursor__text {
-  position: absolute;
-  text-align: center;
-  left: calc(-50% - 1em);
-  top: -1.5em;
-  width: 100px;
-  margin: 0;
-  font-family: 'Hammersmith One', serif;
-  text-transform: uppercase;
-  opacity: 1;
-  transition: opacity 500ms, transform 500ms;
+  transition: opacity 500ms ease, transform 150ms ease;
 }
