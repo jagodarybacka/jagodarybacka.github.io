@@ -2,7 +2,8 @@ const PROJECTS = [ {
   type: 'Project',
   title: 'Focusify',
   description: 'Using Spotify API to create a pomodoro timer with music.',
-  githubLink: 'https://github.com/jagodarybacka/react-flow-music'
+  githubLink: 'https://github.com/jagodarybacka/react-flow-music',
+  demoLink: 'https://jagodarybacka.github.io/react-flow-music'
 }, {
   type: 'Project',
   title: 'Migraine Tracker app',
