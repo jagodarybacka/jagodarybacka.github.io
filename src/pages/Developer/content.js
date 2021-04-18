@@ -44,6 +44,12 @@ const PROJECTS = [ {
   description: 'Little project to show how to get the π value by placing dots in random places.',
   githubLink: 'https://github.com/jagodarybacka/MonteCarloPI',
   demoLink: 'https://jagodarybacka.github.io/MonteCarloPI/'
+}, {
+  type: 'Project',
+  title: 'Movies',
+  description: 'Early project made to learn data manipulation and presentation using React.',
+  githubLink: 'https://github.com/jagodarybacka/movies',
+  demoLink: 'https://jagodarybacka.github.io/movies/'
 } ];
 
 const CONTENT = {
