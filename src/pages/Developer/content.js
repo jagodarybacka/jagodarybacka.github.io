@@ -12,6 +12,12 @@ const PROJECTS = [ {
   demoLink: 'https://migraine-app-project.herokuapp.com/'
 }, {
   type: 'Experiments',
+  title: 'SVG illustrations',
+  description: 'Illustrations I\'ve created using Inkscape.',
+  githubLink: 'https://github.com/jagodarybacka/svg-illustrations',
+  demoLink: 'https://jagodarybacka.github.io/svg-illustrations/'
+}, {
+  type: 'Experiments',
   title: 'Gandalf fights',
   description: 'Playing around with CSS.',
   githubLink: 'https://github.com/jagodarybacka/gandalf-fights',
