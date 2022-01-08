@@ -47,6 +47,10 @@ function DeveloperPage() {
             text={[ 'Software developer', '~ mTab' ]}
             subtext="2018-2021"
           />
+          <Tile
+            text={[ 'Software developer', '~ PwC' ]}
+            subtext="2021-2022"
+          />
         </div>
       </section>
 
