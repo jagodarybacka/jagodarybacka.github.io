@@ -1,0 +1,15 @@
+.Footer {
+    padding-bottom: 3em;
+    margin: 3em 0 0;
+}
+
+.Footer .line {
+    margin-bottom: 3em;
+}
+
+.Footer .date {
+    margin: 0 0 3em;
+    font-size: 0.8em;
+    text-align: center;
+    color: #63032D;
+}

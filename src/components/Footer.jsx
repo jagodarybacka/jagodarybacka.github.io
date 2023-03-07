@@ -1,5 +1,12 @@
+import Links from "./Links";
+import './Footer.css'
+
 export default function Footer() {
     return (
-        <div></div>
+        <div className="Footer">
+            <div className="line" />
+            <div className="date">Made with ♥ in 2023</div>
+            <Links />
+        </div>
     )
 }
