@@ -10,7 +10,7 @@ ReactDOM.render(<React.StrictMode>
     <App />
   </HashRouter>
 </React.StrictMode>,
-document.getElementById('root'));
+  document.getElementById('root'));
 
 navigator.permissions.query({ name: 'clipboard-write' });
 

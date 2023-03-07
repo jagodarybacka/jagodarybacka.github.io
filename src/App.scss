@@ -1,14 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Playfair+Display:ital@0;1&family=Alata&family=Hammersmith+One&display=swap');
-@import 'mixins/index';
 
 .App {
-  width: calc(100% - 2em);
-  height: 100%;
-  background-color: $theme__black;
-  border-width: 1em;
-  border-style: solid;
-  border-image: linear-gradient(to bottom, $theme__background-light, $theme__background-dark) 1;
-  color: $theme__text;
   font-family: 'Alata', sans-serif;
 }
 
@@ -22,10 +14,11 @@
 }
 
 ::-moz-selection {
-  color: $theme__text;
-  background: $theme__background-light;
+  color: #000;
+  background: #fff;
 }
-::selection  {
-  color: $theme__text;
-  background: $theme__background-light;
+
+::selection {
+  color: #fff;
+  background: #000;
 }
