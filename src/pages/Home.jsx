@@ -12,7 +12,7 @@ export default function Home() {
         <h1 className="faded-header">Skills</h1>
         <section>
             <h2 className="faded-subheader">I write code with</h2>
-            <p>For frontend I use - <b>React, Typescript</b>, Redux, Ethers, Node</p>
+            <p>For frontend I use - React, Typescript, Redux, Ethers, Node</p>
             <p>For unit tests I use - Jest, Mocha, Karma, Chai</p>
             <p>For E2E I use - Cypress, WebdriverIO, Playwright</p>
             <p>For project management I use - Jira, Github Projects</p>
@@ -56,12 +56,12 @@ export default function Home() {
             <h2 className="faded-subheader">I did it</h2>
             <p>I wrote some projects:</p>
             <ul>
-                <li><b>Previous Portfolio</b> - <a className="light">Github</a> <a className="light">Demo</a> - I updated my portfolio to the one you are currently browsing but maybe you will like the previous one more</li>
-                <li><b>Focusify</b> - <a className="light">Github</a> <a className="light">Demo</a> - pomodoro-like app to play different Spotify playlists during work time and during breaks</li>
-                <li><b>SVG Illustrations</b> - <a className="light">Github</a> <a className="light">Demo</a> - SVGs I did in Inkscape</li>
-                <li><b>Iterated Prisoner's Dilemma Presentation</b> - <a className="light">Github</a> <a className="light">Demo</a> - presentation I've made for Game Theory class about Iterated Prisoner's Dilemma. The presentation was made in Polish</li>
+                <li><b>Previous Portfolio</b> - <a>Github</a> <a>Demo</a> - I updated my portfolio to the one you are currently browsing but maybe you will like the previous one more</li>
+                <li><b>Focusify</b> - <a>Github</a> <a>Demo</a> - pomodoro-like app to play different Spotify playlists during work time and during breaks</li>
+                <li><b>SVG Illustrations</b> - <a>Github</a> <a>Demo</a> - SVGs I did in Inkscape</li>
+                <li><b>Iterated Prisoner's Dilemma Presentation</b> - <a>Github</a> <a>Demo</a> - presentation I've made for Game Theory class about Iterated Prisoner's Dilemma. The presentation was made in Polish</li>
             </ul>
-            <p>Make sure to check my Github account for other projects. As I work for open source you can check what I’m currently doing in a real-time!</p>
+            <p>Make sure to check my <a href="https://github.com/jagodarybacka">Github</a> account for other projects. As I work for open source you can check what I’m currently doing in a real-time!</p>
         </section>
         <section>
             <h2 className="faded-subheader">I teach code</h2>
