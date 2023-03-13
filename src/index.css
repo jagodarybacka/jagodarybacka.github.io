@@ -33,6 +33,22 @@ h1 {
     font-style: italic;
 }
 
+button {
+    display: inline-block;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 0.9em;
+    color: var(--text);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.button-1:hover,
+.button-1:focus {
+    background-color: #F082AC;
+}
+
 .header {
     font-size: 4em;
     position: relative;

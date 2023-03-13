@@ -5,7 +5,11 @@ export default function Header() {
     return (
         <div className='Header'>
             <img src={BgImage} alt="background" />
-            <h1 className="header">Portfolio</h1>
+            <div class="container">
+                <button onClick={() => { }}>✦ change theme ✦</button>
+                <h1 className="header">Portfolio</h1>
+                <a href="#">Blog</a>
+            </div>
         </div>
     )
 }

@@ -1,14 +1,16 @@
 .Header {
     height: 30vh;
     margin-bottom: 8vh;
-}
-
-.Header h1 {
-    line-height: 30vh;
-    font-size: 3em;
     color: var(--white);
     text-transform: lowercase;
     text-align: center;
+}
+
+.Header .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 
 
@@ -18,4 +20,21 @@
     width: 100vw;
     height: 30vh;
     object-fit: cover;
+    z-index: -1;
+}
+
+.Header h1 {
+    font-size: 3em;
+}
+
+.Header a,
+.Header button {
+    line-height: 1em;
+    margin: 1em 0;
+    color: var(--white);
+}
+
+.Header a:hover,
+.Header button:hover {
+    color: var(--highlight);
 }
