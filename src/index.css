@@ -42,6 +42,7 @@ button {
     background: transparent;
     border: 0;
     cursor: pointer;
+    transition: color 200ms;
 }
 
 .button-1:hover,
