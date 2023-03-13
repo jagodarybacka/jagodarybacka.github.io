@@ -1,13 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,900;1,900&family=Roboto+Serif:opsz,wght@8..144,300;8..144,400&display=swap');
 
+:root {
+    --background: #eaeaea;
+    --text: #2D2D34;
+    --text-dark: #000;
+    --text-primary: #3e5365;
+    --text-contrast: #63032D;
+    --highlight: #7a8ea0;
+    --white: #ffffff;
+}
+
 body {
     font-family: 'Roboto Serif', serif;
     font-weight: 300;
     font-size: 18px;
     max-width: 600px;
     margin: auto;
-    color: #2D2D34;
-    background-color: rgb(255, 250, 250);
+    color: var(--text);
+    background-color: var(--background);
 }
 
 h1,
@@ -34,7 +44,7 @@ h1 {
 .faded-header {
     position: relative;
     left: -1em;
-    color: #63032D;
+    color: var(--text-primary);
     margin: .5em 0 0;
 }
 
@@ -45,7 +55,7 @@ h1 {
 }
 
 .header-section {
-    margin-bottom: 3em;
+    margin-bottom: 4em;
 }
 
 p,
@@ -57,22 +67,30 @@ ul.no-bullets {
     list-style-type: none;
 }
 
+b {
+    color: var(--text-contrast);
+}
+
 a {
     font-family: 'Playfair Display', serif;
     position: relative;
     font-weight: 400;
-    color: #000;
+    color: var(--text-dark);
     text-decoration: none;
     cursor: pointer;
     transition: color 200ms;
 }
 
 a:hover {
-    color: #ED7B84;
+    color: var(--highlight);
 }
 
 a:hover::before {
     background-color: transparent;
+}
+
+a.light {
+    color: var(--text);
 }
 
 .is-hidden {
@@ -94,15 +112,26 @@ a:hover::before {
     position: relative;
     left: -10%;
     height: 1px;
-    background-color: #63032D;
+    background-color: var(--highlight);
+    color: var(--highlight);
+    margin-bottom: 3em;
+}
+
+.line::after {
+    content: "♥";
+    line-height: 16px;
+    font-size: 16px;
+    position: absolute;
+    top: -6px;
+    left: 50%;
 }
 
 ::-moz-selection {
-    color: #2D2D34;
-    background: #ED7B84;
+    color: var(--text);
+    background: var(--highlight);
 }
 
 ::selection {
-    color: #ED7B84;
-    background: #2D2D34;
+    color: var(--highlight);
+    background: var(--text);
 }

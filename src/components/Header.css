@@ -1,0 +1,21 @@
+.Header {
+    height: 30vh;
+    margin-bottom: 8vh;
+}
+
+.Header h1 {
+    line-height: 30vh;
+    font-size: 3em;
+    color: var(--white);
+    text-transform: lowercase;
+    text-align: center;
+}
+
+
+.Header img {
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    height: 30vh;
+    object-fit: cover;
+}

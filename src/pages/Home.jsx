@@ -2,17 +2,17 @@ import Links from "components/Links";
 
 export default function Home() {
     return (<>
-        <h1 className="header">Me & my journey</h1>
         <section className="header-section">
             <h2>I’m Jagoda and I create software</h2>
             <p>Love to have you here lurking on my portfolio, let me tell you something about myself.</p>
             <p>I started as a frontend developer that loved vanilla JavasScript. Now I'm writing decentralized apps for the Ethereum blockchain. I teach others programming and I learn new concepts for fun.</p>
             <Links />
         </section>
+        <div className="line" />
         <h1 className="faded-header">Skills</h1>
         <section>
             <h2 className="faded-subheader">I write code with</h2>
-            <p>For frontend I use - React, Typescript, Redux, Ethers, Node</p>
+            <p>For frontend I use - <b>React, Typescript</b>, Redux, Ethers, Node</p>
             <p>For unit tests I use - Jest, Mocha, Karma, Chai</p>
             <p>For E2E I use - Cypress, WebdriverIO, Playwright</p>
             <p>For project management I use - Jira, Github Projects</p>
@@ -46,20 +46,20 @@ export default function Home() {
         <h1 className="faded-header">Experience</h1>
         <section >
             <h2 className="faded-subheader">I wrote some code here</h2>
-            <p>I finished Adam Mickiewicz University in Poznan, Poland, and got my Computer Science Bachelor of Engineering. Learned some math there and it started my romance with functional programming.</p>
-            <p>I was a workshop coordinator at Devmeetings where I was preparing one-day bootcamps for software developers at different levels. Seeing so many junior developers in need of mentoring got me thinking about how can I help more people.</p>
-            <p>I was a frontend developer at mTab where I was creating software for data analysis - large amounts of data, so I learned a lot about writing applications that work fast.</p>
-            <p>I worked in PWC helping with various projects. I had an opportunity to touch many technologies and make my own choices starting new projects.</p>
-            <p>Currently, I write open source project Taho which is an Ethereum wallet. This got me into blockchain and I fell in love! Working in an environment where there is constantly so much cool stuff I can learn keeps me going.</p>
+            <p>I finished <b>Adam Mickiewicz University</b> in Poznan, Poland, and got my Computer Science Bachelor of Engineering. Learned some math there and it started my romance with functional programming.</p>
+            <p>I was a  <b>workshop coordinator at Devmeetings</b> where I was preparing one-day bootcamps for software developers at different levels. Seeing so many junior developers in need of mentoring got me thinking about how can I help more people.</p>
+            <p>I was a <b>frontend developer at mTab</b> where I was creating software for data analysis - large amounts of data, so I learned a lot about writing applications that work fast.</p>
+            <p>I worked for <b>PWC</b> helping with various projects. I had an opportunity to touch many technologies and make my own choices starting new projects.</p>
+            <p>Currently, I write <b>open source project Taho</b> which is an Ethereum wallet. This got me into blockchain and I fell in love! Working in an environment where there is constantly so much cool stuff I can learn keeps me going.</p>
         </section>
         <section>
             <h2 className="faded-subheader">I did it</h2>
             <p>I wrote some projects:</p>
             <ul>
-                <li>Previous Portfolio - Github Demo - I updated my portfolio to the one you are currently browsing but maybe you will like the previous one more</li>
-                <li>Focusify - Github Demo - pomodoro-like app to play different Spotify playlists during work time and during breaks</li>
-                <li>SVG Illustrations - Github Demo - SVGs I did in Inkscape</li>
-                <li>Iterated Prisoner's Dilemma Presentation - Github Demo - presentation I've made for Game Theory class about Iterated Prisoner's Dilemma. The presentation was made in Polish</li>
+                <li><b>Previous Portfolio</b> - <a className="light">Github</a> <a className="light">Demo</a> - I updated my portfolio to the one you are currently browsing but maybe you will like the previous one more</li>
+                <li><b>Focusify</b> - <a className="light">Github</a> <a className="light">Demo</a> - pomodoro-like app to play different Spotify playlists during work time and during breaks</li>
+                <li><b>SVG Illustrations</b> - <a className="light">Github</a> <a className="light">Demo</a> - SVGs I did in Inkscape</li>
+                <li><b>Iterated Prisoner's Dilemma Presentation</b> - <a className="light">Github</a> <a className="light">Demo</a> - presentation I've made for Game Theory class about Iterated Prisoner's Dilemma. The presentation was made in Polish</li>
             </ul>
             <p>Make sure to check my Github account for other projects. As I work for open source you can check what I’m currently doing in a real-time!</p>
         </section>
