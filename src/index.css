@@ -114,6 +114,12 @@ a:hover,
     justify-content: space-between;
 }
 
+.disabled {
+    pointer-events: none;
+    opacity: 0.7;
+    text-decoration: line-through;
+}
+
 .line {
     width: 120%;
     position: relative;
