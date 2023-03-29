@@ -1,12 +1,15 @@
 import './Header.css'
-import BgImage from '../assets/bg-big.jpeg'
+import { useContext } from 'react'
+import { ThemeContext, THEMES } from 'App'
 
-export default function Header() {
+export default function Header({ setTheme }) {
+    const theme = useContext(ThemeContext)
+
     return (
         <div className='Header'>
-            <img src={BgImage} alt="background" />
+            <img src={THEMES[theme].img} alt="background" />
             <div class="container">
-                <button onClick={() => { }}>✦ change theme ✦</button>
+                <button onClick={setTheme}>✦ change theme ✦</button>
                 <h1 className="header">Portfolio</h1>
                 <a href="#">Blog</a>
             </div>

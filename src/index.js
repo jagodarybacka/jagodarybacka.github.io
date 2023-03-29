@@ -1,12 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App, { ThemeContext } from './App';
 import reportWebVitals from './reportWebVitals';
+
+function AppWithContext() {
+  const [theme, setTheme] = useState("red")
+  return (
+    <ThemeContext.Provider value={theme}>
+      <App setTheme={setTheme} />
+    </ThemeContext.Provider>
+  )
+}
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <AppWithContext />
   </React.StrictMode>,
   document.getElementById('root'));
 

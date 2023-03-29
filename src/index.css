@@ -4,9 +4,6 @@
     --background: #eaeaea;
     --text: #2D2D34;
     --text-dark: #000;
-    --text-primary: #3e5365;
-    --text-contrast: #63032D;
-    --highlight: #7a8ea0;
     --white: #ffffff;
 }
 
@@ -18,6 +15,7 @@ body {
     margin: auto;
     color: var(--text);
     background-color: var(--background);
+    transition: color 300ms ease-in-out;
 }
 
 h1,
