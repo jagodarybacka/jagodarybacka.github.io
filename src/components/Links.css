@@ -1,6 +1,11 @@
 .Links {
     padding: 0 3em;
     margin: auto;
+    display: flex;
     justify-content: space-around;
     color: var(--text-dark);
+}
+
+.Links li {
+    margin: 0 5px;
 }

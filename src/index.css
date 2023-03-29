@@ -39,13 +39,10 @@ button {
     color: var(--text);
     background: transparent;
     border: 0;
+    padding-left: 0;
+    padding-right: 0;
     cursor: pointer;
     transition: color 200ms;
-}
-
-.button-1:hover,
-.button-1:focus {
-    background-color: #F082AC;
 }
 
 .header {
@@ -144,4 +141,31 @@ a:hover,
 ::selection {
     color: var(--highlight);
     background: var(--text);
+}
+
+@media screen and (max-width: 750px) {
+    body {
+        font-size: 16px;
+        max-width: 80%;
+    }
+
+    .header {
+        width: 100%;
+        left: 0;
+    }
+
+    .faded-header,
+    .faded-subheader {
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        font-size: 14px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
 }
