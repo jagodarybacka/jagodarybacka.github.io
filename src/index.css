@@ -88,7 +88,8 @@ b {
     color: var(--text-contrast);
 }
 
-a {
+a,
+.CopyLink {
     font-family: 'Playfair Display', serif;
     position: relative;
     font-weight: 400;
@@ -98,13 +99,11 @@ a {
     transition: color 200ms;
 }
 
-a:hover {
+a:hover,
+.CopyLink:hover {
     color: var(--highlight);
 }
 
-a:hover::before {
-    background-color: transparent;
-}
 
 .is-hidden {
     opacity: 0;

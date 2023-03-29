@@ -56,10 +56,9 @@ export default function Home() {
             <h2 className="faded-subheader">I did it</h2>
             <p>I wrote some projects:</p>
             <ul>
-                <li><b>Previous Portfolio</b> - <a>Github</a> <a>Demo</a> - I updated my portfolio to the one you are currently browsing but maybe you will like the previous one more</li>
-                <li><b>Focusify</b> - <a>Github</a> <a>Demo</a> - pomodoro-like app to play different Spotify playlists during work time and during breaks</li>
-                <li><b>SVG Illustrations</b> - <a>Github</a> <a>Demo</a> - SVGs I did in Inkscape</li>
-                <li><b>Iterated Prisoner's Dilemma Presentation</b> - <a>Github</a> <a>Demo</a> - presentation I've made for Game Theory class about Iterated Prisoner's Dilemma. The presentation was made in Polish</li>
+                <li><b>Focusify</b> - <a href="https://github.com/jagodarybacka/focusify-app">Github</a> <a href="https://jagodarybacka.github.io/focusify-app/">Demo</a> - pomodoro-like app to play different Spotify playlists during work time and during breaks</li>
+                <li><b>SVG Illustrations</b> - <a href="https://github.com/jagodarybacka/svg-illustrations">Github</a> <a href="https://jagodarybacka.github.io/svg-illustrations/">Demo</a> - SVGs I did in Inkscape</li>
+                <li><b>Iterated Prisoner's Dilemma Presentation</b> - <a href="https://github.com/jagodarybacka/game-theory-presentation">Github</a> <a href="https://jagodarybacka.github.io/game-theory-presentation/">Demo</a> - presentation I've made for Game Theory class about Iterated Prisoner's Dilemma. The presentation was made in Polish</li>
             </ul>
             <p>Make sure to check my <a href="https://github.com/jagodarybacka">Github</a> account for other projects. As I work for open source you can check what I’m currently doing in a real-time!</p>
         </section>
