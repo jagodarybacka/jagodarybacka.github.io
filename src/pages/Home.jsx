@@ -5,7 +5,7 @@ export default function Home() {
         <section className="header-section">
             <h2>I’m Jagoda and I create software</h2>
             <p>Love to have you here lurking on my portfolio, let me tell you something about myself.</p>
-            <p>I started as a frontend developer that loved vanilla JavasScript. Now I'm writing decentralized apps for the Ethereum blockchain. I teach others programming and I learn new concepts for fun.</p>
+            <p>I started as a frontend developer that loved vanilla JavasScript. Now I'm writing decentralized apps for the Ethereum blockchain. I teach programming and I learn new concepts for fun.</p>
             <Links />
         </section>
         <div className="line" />
