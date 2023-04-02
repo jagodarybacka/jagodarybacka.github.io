@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkjagodarybacka_github_io=self.webpackChunkjagodarybacka_github_io||[]).push([[633],{633:function(a,e,i){a.exports=i.p+"static/media/article_one.eb5b6462a3ade3096289.md"}}]);
