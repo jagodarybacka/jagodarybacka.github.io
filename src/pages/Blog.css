@@ -1,0 +1,22 @@
+.Blog {
+    display: flex;
+    flex-direction: column;
+}
+
+.Blog a {
+    margin-bottom: 2em;
+}
+
+.Blog h1 {
+    margin-top: 0;
+}
+
+.Blog h3 {
+    margin: 0;
+}
+
+.Blog p {
+    font-family: 'Roboto Serif', serif;
+    font-weight: 300;
+    margin: .5em 0;
+}

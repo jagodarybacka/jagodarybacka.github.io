@@ -1,6 +1,7 @@
 import React, { createContext, useContext } from 'react';
 import HomePage from 'pages/Home';
 import BlogPage from 'pages/Blog';
+import BlogPost from 'pages/BlogPost';
 import Footer from 'components/Footer';
 import Header from 'components/Header';
 import BgBlue from './assets/bg-blue.jpeg'
@@ -46,6 +47,9 @@ const router = createHashRouter([{
 }, {
   path: "/blog",
   element: <BlogPage />
+}, {
+  path: "/blog/:postID",
+  element: <BlogPost />
 }])
 
 
