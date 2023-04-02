@@ -20,7 +20,7 @@ export default function Home() {
         </section>
         <section className="row">
             <div>
-                <h2 style={{ color: "#2C4E2C" }}>I thrive with</h2>
+                <h2>I thrive with</h2>
                 <ul>
                     <li>dynamic work environment</li>
                     <li>bleeding edge technologies</li>
@@ -34,7 +34,7 @@ export default function Home() {
                 </ul>
             </div>
             <div>
-                <h2 style={{ color: "#630303" }}>Not my cup of tea</h2>
+                <h2>Not my cup of tea</h2>
                 <ul>
                     <li>legacy projects</li>
                     <li>big corporations</li>

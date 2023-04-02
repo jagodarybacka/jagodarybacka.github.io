@@ -5,7 +5,7 @@ export default function Footer() {
     return (
         <div className="Footer">
             <div className="line" />
-            <div className="date">Made with ♥ in 2023</div>
+            <div className="date">Made in 2023</div>
             <Links />
         </div>
     )
