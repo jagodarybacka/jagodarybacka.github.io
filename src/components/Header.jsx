@@ -10,7 +10,7 @@ export default function Header({ setTheme }) {
             <img src={THEMES[theme].img} alt="background" />
             <div className="container">
                 <button onClick={setTheme}>✦ change theme ✦</button>
-                <h1 className="header"><a href="/">Portfolio</a></h1>
+                <h1 className="header"><a href="/#/">Portfolio</a></h1>
                 <a href="/#/blog">Blog</a>
             </div>
         </div>
