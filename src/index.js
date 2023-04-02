@@ -1,14 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App, { ThemeContext } from './App';
+import App from './App';
+import { ThemeContext, useTheme } from 'themes';
 import reportWebVitals from './reportWebVitals';
 
 function AppWithContext() {
-  const [theme, setTheme] = useState("red")
+  const [theme, changeTheme] = useTheme()
+
   return (
     <ThemeContext.Provider value={theme}>
-      <App setTheme={setTheme} />
+      <App changeTheme={changeTheme} />
     </ThemeContext.Provider>
   )
 }
