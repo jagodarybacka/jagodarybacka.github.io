@@ -27,6 +27,11 @@
     font-size: 3em;
 }
 
+.Header h1 a:hover {
+    color: var(--white);
+    opacity: 0.9;
+}
+
 .Header a,
 .Header button {
     line-height: 1em;

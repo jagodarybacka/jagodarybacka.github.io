@@ -91,7 +91,7 @@ a,
     color: var(--text-dark);
     text-decoration: none;
     cursor: pointer;
-    transition: color 200ms;
+    transition: color 200ms ease-in, opacity 200ms ease-in;
 }
 
 a:hover,

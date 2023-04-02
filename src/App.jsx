@@ -1,10 +1,13 @@
 import React, { createContext, useContext } from 'react';
 import HomePage from 'pages/Home';
+import BlogPage from 'pages/Blog';
 import Footer from 'components/Footer';
 import Header from 'components/Header';
 import BgBlue from './assets/bg-blue.jpeg'
 import BgRed from './assets/bg-red.jpeg'
 import BgGreen from './assets/bg-green.jpeg'
+import { RouterProvider } from 'react-router';
+import { createHashRouter } from 'react-router-dom';
 
 export const THEMES = {
   red: {
@@ -37,6 +40,15 @@ export const themeNames = Object.keys(THEMES)
 
 export const ThemeContext = createContext()
 
+const router = createHashRouter([{
+  path: "/",
+  element: <HomePage />
+}, {
+  path: "/blog",
+  element: <BlogPage />
+}])
+
+
 function App({ setTheme }) {
   const theme = useContext(ThemeContext)
   const getNextTheme = () => themeNames[(themeNames.indexOf(theme) + 1) % themeNames.length]
@@ -44,7 +56,7 @@ function App({ setTheme }) {
   return (
     <div style={THEMES[theme].css}>
       <Header setTheme={() => setTheme(getNextTheme())} />
-      <HomePage />
+      <RouterProvider router={router} />
       <Footer />
     </div>
   );
