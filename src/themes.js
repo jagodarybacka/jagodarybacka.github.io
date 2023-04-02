@@ -63,7 +63,7 @@ export function useTheme() {
 
     const changeTheme = useCallback(() => {
         const nextTheme = themeNames[(themeNames.indexOf(storedTheme) + 1) % themeNames.length]
-        console.log(nextTheme)
+
         setStoredTheme(nextTheme);
         localStorage.setItem("theme", nextTheme)
     }, [storedTheme])
