@@ -1,27 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import { ThemeContext, useTheme } from 'themes';
-import reportWebVitals from './reportWebVitals';
-
-function AppWithContext() {
-  const [theme, changeTheme] = useTheme()
-
-  return (
-    <ThemeContext.Provider value={theme}>
-      <App changeTheme={changeTheme} />
-    </ThemeContext.Provider>
-  )
-}
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
-    <AppWithContext />
+    <App />
   </React.StrictMode>,
-  document.getElementById('root'));
+  document.getElementById("root")
+);
 
-navigator.permissions.query({ name: 'clipboard-write' });
+navigator.permissions.query({ name: "clipboard-write" });
 
 /*
  * If you want to start measuring performance in your app, pass a function

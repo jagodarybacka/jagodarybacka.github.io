@@ -1,33 +1,54 @@
-import React, { useContext } from 'react';
-import HomePage from 'pages/Home';
-import BlogPage from 'pages/Blog';
-import BlogPost from 'pages/BlogPost';
-import Footer from 'components/Footer';
-import Header from 'components/Header';
-import { THEMES, ThemeContext } from 'themes';
-import { RouterProvider } from 'react-router';
-import { createHashRouter } from 'react-router-dom';
+import React from "react";
+import ParallaxElement from "./components/ParallaxElement";
+import { BlobCollection } from "./components/BlobShapes";
 
-const router = createHashRouter([{
-  path: "/",
-  element: <HomePage />
-}, {
-  path: "/blog",
-  element: <BlogPage />
-}, {
-  path: "/blog/:postID",
-  element: <BlogPost />
-}])
-
-
-function App({ changeTheme }) {
-  const theme = useContext(ThemeContext)
-
+function App() {
   return (
-    <div style={THEMES[theme].css}>
-      <Header changeTheme={changeTheme} />
-      <RouterProvider router={router} />
-      <Footer />
+    <div className="app-container">
+      <nav>
+        <a
+          href="https://github.com/jagodarybacka"
+          target="_blank"
+          rel="noreferrer"
+        >
+          github
+        </a>
+        <a href="mailto:berry.rybacka@gmail.com">let's talk</a>
+      </nav>
+
+      <div className="profile-section">
+        <div className="profile-container">
+          <BlobCollection />
+          <ParallaxElement
+            intensity={0.5}
+            className="profile-picture"
+          ></ParallaxElement>
+          <ParallaxElement
+            intensity={1.2}
+            className="sticker sticker-left"
+          ></ParallaxElement>
+          <ParallaxElement
+            intensity={1.5}
+            className="sticker sticker-right"
+          ></ParallaxElement>
+        </div>
+        <div className="profile-text">
+          <h1>Jagoda Rybacka</h1>
+          <h3>
+            senior fullstack developer /<br />
+            technical consultant /<br />
+            project management
+          </h3>
+          <p>
+            fullstack apps | blockchain | ecommerce | 3d design
+            <br />
+            team leadership | technical recruitment
+          </p>
+          <a href="https://calendly.com/berry-rybacka/30min" className="cta">
+            work with me <span className="arrow">→</span>
+          </a>
+        </div>
+      </div>
     </div>
   );
 }
